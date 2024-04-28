@@ -1,4 +1,3 @@
-﻿
 let dictionary = {
     "apple": "A fruit that grows on trees.",
     "banana": "A long curved fruit that grows in clusters.",
