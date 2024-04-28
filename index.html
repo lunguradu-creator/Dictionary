@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
@@ -30,6 +30,21 @@
         #button-addon1 {
             margin-left: 20px; /* Add margin to the left side of the button */
         }
+        #message {
+            position: fixed; /* Stays in place during scrolling */
+            top: 50%; /* Center vertically */
+            left: 50%; /* Center horizontally */
+            transform: translate(-50%, -50%); /* Adjust the exact center */
+            width: auto; /* Auto width based on content */
+            padding: 10px; /* Padding around the text */
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+            color: white; /* White text color */
+            text-align: center; /* Center the text inside the box */
+            border-radius: 8px; /* Rounded corners */
+            z-index: 1000; /* Make sure it is on top of other content */
+            display: none; /* Start hidden */
+        }
+
     </style>
 </head>
 <body>
@@ -61,5 +76,6 @@
     <script src="dictionary.js"></script>
     <script src="search.js"></script>
     <script src="recordWord.js"></script>
+    <div id="message"></div>
 </body>
 </html>
